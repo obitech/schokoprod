@@ -1,7 +1,3 @@
-/********************************************************
-************************* LIBRARIES *********************
-*********************************************************/
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -15,11 +11,12 @@ using namespace std;
 *********************** KONSTANTEN **********************
 *********************************************************/
 
+// Hier bei Bedarf Werte entsprechend ändern
 #define ANZAHL_PRALINEN 					3
 #define ANZAHL_ZUTATEN 						7
 #define ANZAHL_ZUTATEN_PRO_PRALINE		5
 
-// Hier bitte Dateinamen entsprechend ändern
+// Hier bei Bedarf Dateinamen entsprechend ändern
 #define DATEI_ZUTATEN_NAME					"zutaten.txt"
 #define DATEI_REZEPTE_NAME					"schoki.txt"
 
@@ -60,3 +57,17 @@ struct schokolade_t {
 	schoko_zutat_t 	zutat[ANZAHL_ZUTATEN_PRO_PRALINE];
 	kosten_t				kosten;
 };
+
+/********************************************************
+************** DEKLARATION DER FUNKTIONEN ***************
+*********************************************************/
+
+void 	print_zutaten(zutat_t *array);
+void 	print_pralinen(schokolade_t *array, zutat_t *array2);
+void 	berechnung_rohstoff(schokolade_t *array, zutat_t *array2);
+void	berechnung_rohstoff_pro_tafel(schokolade_t *array, zutat_t *array2);
+void 	berechnung_preis(schokolade_t *array, zutat_t *array2);
+int 	get_uint();
+
+void 	press_enter();
+void 	help();

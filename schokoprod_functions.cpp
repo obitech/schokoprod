@@ -1,19 +1,5 @@
-#include "schokoprod_structs.cpp"
+#include "schokoprod.h"
 
-/********************************************************
-*************** FUNKTIONEN: DEKLARATION *****************
-*********************************************************/
-
-/*void 	print_zutaten(zutat_t *array);
-void 	print_pralinen(schokolade_t *array, zutat_t *array2);
-void 	berechnung_rohstoff(schokolade_t *array, zutat_t *array2);
-void	berechnung_rohstoff_pro_tafel(schokolade_t *array, zutat_t *array2);
-void 	berechnung_preis(schokolade_t *array, zutat_t *array2);
-int 	get_uint();
-
-void 	press_enter();
-void 	help();
-*/
 /********************************************************
 *********** DEFINITION DER HILFSFUNKTIONEN **************
 *********************************************************/

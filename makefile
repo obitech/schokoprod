@@ -6,14 +6,11 @@ CFLAGS=-c -Wall
 
 all: schokoprod
 
-schokoprod: schokoprod_main.o schokoprod_structs.o schokoprod_functions.o
-	$(CC) schokoprod_main.o schokoprod_structs.o schokoprod_functions.o -o schokoprod
+schokoprod: schokoprod_main.o schokoprod_functions.o
+	$(CC) schokoprod_main.o schokoprod_functions.o -o schokoprod
 
 schokoprod_main.o: schokoprod_main.cpp
 	$(CC) $(CFLAGS) schokoprod_main.cpp
-
-schokoprod_structs.o: schokoprod_structs.cpp
-	$(CC) $(CFLAGS) schokoprod_structs.cpp
 
 schokoprod_functions.o: schokoprod_functions.cpp
 	$(CC) $(CFLAGS) schokoprod_functions.cpp

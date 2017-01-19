@@ -19,21 +19,7 @@
 **********************************************************/
 
 // Header file
-#include "schokoprod_functions.cpp"
-
-/********************************************************
-*************** FUNKTIONEN: DEKLARATION *****************
-*********************************************************/
-/*
-extern void 	print_zutaten(zutat_t *array);
-extern void 	print_pralinen(schokolade_t *array, zutat_t *array2);
-extern void 	berechnung_rohstoff(schokolade_t *array, zutat_t *array2);
-extern void		berechnung_rohstoff_pro_tafel(schokolade_t *array, zutat_t *array2);
-extern void 	berechnung_preis(schokolade_t *array, zutat_t *array2);
-extern int 		get_uint();
-
-extern void 	press_enter();
-extern void 	help();*/
+#include "schokoprod.h"
 
 /********************************************************
 ********************* START OF MAIN *********************
