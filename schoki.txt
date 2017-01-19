@@ -1,0 +1,24 @@
+vollmilch_mandel
+100
+5
+kakao 34
+kakaobutter 10
+milchpulver 20
+zucker 28
+mandeln 8
+
+marzipan
+100
+3
+kakao 50
+zucker 25
+marzipan 25
+
+keksschoki
+100
+5
+kakao 40
+mandeln 7
+kakaobutter 8
+zucker 30
+keks 15

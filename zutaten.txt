@@ -1,0 +1,7 @@
+mandeln 1.10
+marzipan 1.22
+milchpulver 0.6
+kakao 0.82
+kakaobutter 2.2
+keks 0.64
+zucker 0.14
