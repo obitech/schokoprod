@@ -6,6 +6,7 @@
 * sind 3 Pralinen, 7 Zutaten und 5 maximale Zutaten pro Praline gegeben. Diese Werte und die 
 * Textdatein können aber angepasst werden (es müssen aber noch die jeweiligen #defines geändert)
 * werden.
+* Bei Anpassungender Dateien müssen die entsprechenden Werte in der schokoprod.h geändert werden.
 * Nun können die Rohstoffkosten für eine oder mehrer Tafeln berechnet werden, sowie
 * eine Matrix zum Berechnen des Verkaufspreises. Für die Berechnung des Verkaufspreises kommen
 * zusätliche Kosten wie Personal, Betrieb, etc. hinzu, welche auch angepasst werden können.
@@ -122,11 +123,10 @@ int main() {
 	while (true) {
 		cout << "\n-- Hauptmenü\n";
 		cout << "Willkommen im Programm zur Berechnung einer Schokoladenproduktion. Bitte wählen Sie:\n";
-		cout << "1 - STANDARDAUSGABE FÜR BELEG\n";
-		cout << "2 - Hilfe\n";
-		cout << "3 - Anzeige von Zutaten & Rezepten\n";
-		cout << "4 - Berechnung der Produktionskosten (Rohstoffe)\n";
-		cout << "5 - Berechnung des Verkaufspreises\n";
+		cout << "1 - Hilfe\n";
+		cout << "2 - Anzeige von Zutaten & Rezepten\n";
+		cout << "3 - Berechnung der Produktionskosten (Rohstoffe)\n";
+		cout << "4 - Berechnung des Verkaufspreises\n";
 		cout << "\n0 - Exit\n";
 		cout << "\nBitte Nummer eingeben:\n> ";
 
@@ -138,24 +138,19 @@ int main() {
 		}
 
 		else if (choice == "1") {
-			berechnung_rohstoff_pro_tafel(praline, zutaten);
-			berechnung_preis(praline, zutaten);
-		}
-
-		else if (choice == "2") {
 			help();
 		}
 
-		else if (choice == "3") {
+		else if (choice == "2") {
 			print_zutaten(zutaten);
 			print_pralinen(praline, zutaten);
 		}
 
-		else if (choice == "4") {
+		else if (choice == "3") {
 			berechnung_rohstoff_pro_tafel(praline, zutaten);
 		}
 
-		else if (choice == "5") {
+		else if (choice == "4") {
 			berechnung_preis(praline, zutaten);
 		}
 
